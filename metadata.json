@@ -1,0 +1,6 @@
+
+{
+  "name": "Torch CV Assistant",
+  "description": "An ultra-minimalist, AI-powered CV builder that generates 7 professional versions of your resume from simple structured data using Gemini 3.",
+  "requestFramePermissions": []
+}
