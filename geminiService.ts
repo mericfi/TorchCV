@@ -1,11 +1,11 @@
 
 import { GoogleGenAI, Type } from "@google/genai";
-import { CVData, Language, AIResponse } from "../types";
+import { CVData, Language, AIResponse } from "./types";
 
 export const generateCVVersions = async (data: CVData, lang: Language): Promise<AIResponse> => {
   // Always use { apiKey: process.env.API_KEY } for GoogleGenAI initialization
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-  
+
   const systemInstruction = `
     You are an elite CV strategist and recruiter.
     Rewrite the user's content to maximize hiring impact in ${lang === Language.EN ? 'English' : 'Turkish'}.

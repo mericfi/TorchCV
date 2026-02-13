@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Language, Theme, CVData, CVVersion } from './types';
 import { TRANSLATIONS, LOGO } from './constants';
-import { generateCVVersions } from './services/geminiService';
+import { generateCVVersions } from './geminiService';
 
 const InputGroup: React.FC<{ label: string; children: React.ReactNode }> = ({ label, children }) => (
   <div className="mb-4 group">
